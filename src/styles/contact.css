@@ -1,0 +1,34 @@
+
+  .address1 {
+    white-space: nowrap;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 1vw;
+    color: #C81010;
+    margin-top: 1.5vw;
+    margin-left: 1vw;
+  }
+
+  .address2 {
+    white-space: nowrap;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 1vw;
+    color: #C81010;
+    margin-left: 1vw;
+  }
+
+  .address3 {
+    white-space: nowrap;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 1vw;
+    color: #C81010;
+    margin-bottom: 1.5vw;
+    margin-left: 1vw;
+  }
+
+  .phone {
+    white-space: nowrap;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 1vw;
+    color: #C81010;
+    margin-left: 1vw;
+  }

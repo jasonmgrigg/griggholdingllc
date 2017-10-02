@@ -1,0 +1,35 @@
+  .fullFooter {
+    background-image: url('../backgrounds/vintage-concrete.png');
+    width: 100vw;
+    height: 7.5vw;
+  }
+
+  .developer {
+    padding-top: 1vw;
+  }
+
+  .developerName {
+    white-space: nowrap;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: .8vw;
+    color: #C81010;
+    margin-left: 88vw;
+  }
+
+  .developerCompany {
+    margin-top: -.7vw;
+    white-space: nowrap;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: .8vw;
+    color: #C81010;
+    margin-left: 88vw;
+  }
+
+  .developerPhone {
+    margin-top: -.6vw;
+    white-space: nowrap;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: .8vw;
+    color: #C81010;
+    margin-left: 88vw;
+  }
