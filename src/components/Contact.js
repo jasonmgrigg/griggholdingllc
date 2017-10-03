@@ -9,10 +9,15 @@ class Contact extends Component {
     return (
       <div>
       <Header />
-        <div className="address1">Grigg Holdings, LLC</div>
-        <div className="address2">1181 Great Ridge Parkway</div>
-        <div className="address3">Chapel Hill, NC  27516</div>
-        <div className="phone">919-932-0835</div>
+        <div className="contactContainer">
+          <div className="address1">Grigg Holdings, LLC</div>
+          <div className="address2">1181 Great Ridge Parkway</div>
+          <div className="address3">Chapel Hill, NC  27516</div>
+          <div className="phone">919-932-0835</div>
+          <a className="emailContainer" href="mailto: jason@jasonmgrigg.com">
+          jason@griggholdingsllc.com
+          </a>
+        </div>
       <Footer />
       </div>
     );

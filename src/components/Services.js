@@ -9,6 +9,7 @@ class Services extends Component {
     return (
       <div>
       <Header />
+        <div className="servicesContainer">
         <div className="homeServicesTitle">Home Services Offered</div>
           <div classname="servicesListContainer">
             <ul classname="servicesList">
@@ -20,6 +21,9 @@ class Services extends Component {
               </li>
               <li classname="servicesItem">
                 Plumbing
+              </li>
+              <li classname="servicesItem">
+                Leak Repair
               </li>
               <li classname="servicesItem">
                 Doors
@@ -36,7 +40,20 @@ class Services extends Component {
               <li classname="servicesItem">
                 Gutter Cleaning
               </li>
+              <li classname="servicesItem">
+                Window Cleaning
+              </li>
+              <li classname="servicesItem">
+                Pressure Washing
+              </li>
+              <li classname="servicesItem">
+                Air Filter Replacement
+              </li>
+              <li classname="servicesItem">
+                Smoke Detector Battery Replacement
+              </li>
             </ul>
+          </div>
           </div>
       <Footer />
       </div>

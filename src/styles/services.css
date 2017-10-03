@@ -1,8 +1,12 @@
 
+  .servicesContainer {
+    background-color: gray;
+    height: 100%;
+  }
+
+
   .homeServicesTitle {
-    white-space: nowrap;
     font-family: 'Fredericka the Great', cursive;
     font-size: 3vw;
     color: #C81010;
-    margin-top: 1.5vw;
   }

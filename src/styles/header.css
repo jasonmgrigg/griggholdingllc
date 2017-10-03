@@ -1,4 +1,8 @@
 
+  body {
+    background-color: gray;
+  }
+
   .fullHeader {
     background-color: #121E2C;
     width: 100vw;

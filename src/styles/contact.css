@@ -1,4 +1,8 @@
 
+  .contactContainer {
+    height: 33vw;
+  }
+
   .address1 {
     white-space: nowrap;
     font-family: 'Fredericka the Great', cursive;
@@ -26,6 +30,14 @@
   }
 
   .phone {
+    white-space: nowrap;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 1vw;
+    color: #C81010;
+    margin-left: 1vw;
+  }
+
+  .emailContainer {
     white-space: nowrap;
     font-family: 'Fredericka the Great', cursive;
     font-size: 1vw;
