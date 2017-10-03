@@ -21,6 +21,9 @@ class Header extends Component {
           <a href='/about'>
             <h3 className="headerSubtitle">About</h3>
           </a>
+          <a href='/services'>
+            <h3 className="headerSubtitle">Services</h3>
+          </a>
           </div>
 
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PictureCarousel from './PictureCarousel.js'
+import '../styles/body.css';
 
 class Body extends Component {
   constructor(props) {
@@ -14,7 +14,9 @@ class Body extends Component {
   render() {
     return (
       <div>
-        <PictureCarousel />
+        <div className="bodyContainer">
+          <div>Placeholder</div>
+        </div>
       </div>
     )
   }

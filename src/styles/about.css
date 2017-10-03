@@ -1,25 +1,4 @@
 
-  .address1 {
-    white-space: nowrap;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 1vw;
-    color: #C81010;
-    margin-top: 1.5vw;
-  }
-
-  .address2 {
-    white-space: nowrap;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 1vw;
-    color: #C81010;
-    margin-top: 0vw;
-  }
-
-  .address3 {
-    white-space: nowrap;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 1vw;
-    color: #C81010;
-    margin-top: 0vw;
-    margin-bottom: 1.5vw;
+  .aboutContainer {
+    background-color: gray;
   }
