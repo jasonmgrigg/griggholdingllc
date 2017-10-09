@@ -25,7 +25,18 @@
     text-decoration: none;
   }
 
+  .headerTitleDescription {
+    white-space: nowrap;
+    font-family: 'Fresca', sans-serif;
+    font-size: 2vw;
+    color: gray;
+    margin-top: 1.6vw;
+    margin-left: 1vw;
+    text-decoration: none;
+  }
+
   .headerSubtitle {
+    text-align: center;
     font-family: 'Fresca', sans-serif;
     font-size: 1.6vw;
     color: white;
@@ -35,13 +46,19 @@
     text-decoration: none;
   }
 
-  .headerSubtitle:hover {
-    color: gray;
-  }
-
   .headerInfo {
     display: flex;
     flex-direction: row;
-    margin-left: 20vw;
+    margin-left: 10vw;
     margin-top: 1vw;
+  }
+
+  .contactUsShowMore {
+    margin-left: -10vw;
+    margin-top: -2vw;
+    background-color: gray;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+    width: 25vw;
   }

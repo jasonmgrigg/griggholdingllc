@@ -9,15 +9,21 @@ class Homepage extends Component {
     super(props);
 
     this.showMore = this.showMore.bind(this, true);
+    this.handleMouseHoverLandscaping = this.handleMouseHoverLandscaping.bind(this);
     this.handleMouseHoverGeneralCarpentry = this.handleMouseHoverGeneralCarpentry.bind(this);
     this.handleMouseHoverPlumbing = this.handleMouseHoverPlumbing.bind(this);
-    this.handleMouseHoverLandscaping = this.handleMouseHoverLandscaping.bind(this);
+    this.handleMouseHoverRoofRepair = this.handleMouseHoverRoofRepair.bind(this);
+    this.handleMouseHoverDoorRepair = this.handleMouseHoverDoorRepair.bind(this);
+    this.handleMouseHoverPainting = this.handleMouseHoverPainting.bind(this);
     this.handleMouseHoverAppleImacRepair = this.handleMouseHoverAppleImacRepair.bind(this);
 
     this.state = {
-      isHoveringPlumbing: false,
+      isHoveringLandscaping: false,
       isHoveringGeneralCarpentry: false,
-      isHoveringGeneralLandscaping: false,
+      isHoveringPlumbing: false,
+      isHoveringRoofRepair: false,
+      isHoveringDoorRepair: false,
+      isHoveringPainting: false,
       isHoveringAppleImacRepair: false,
       contributors: [
         {
@@ -58,20 +64,38 @@ class Homepage extends Component {
       : this.setState({ rowsToDisplay: 0, expanded: false });
   }
 
-  handleMouseHoverPlumbing() {
-    this.setState(this.toggleHoverStatePlumbing);
+  handleMouseHoverLandscaping() {
+    this.setState(this.toggleHoverStateLandscaping);
   }
 
   handleMouseHoverGeneralCarpentry() {
     this.setState(this.toggleHoverStateGeneralCarpentry);
   }
 
-  handleMouseHoverLandscaping() {
-    this.setState(this.toggleHoverStateLandscaping);
+  handleMouseHoverPlumbing() {
+    this.setState(this.toggleHoverStatePlumbing);
+  }
+
+  handleMouseHoverRoofRepair() {
+    this.setState(this.toggleHoverStateRoofRepair);
+  }
+
+  handleMouseHoverDoorRepair() {
+    this.setState(this.toggleHoverStateDoorRepair);
+  }
+
+  handleMouseHoverPainting() {
+    this.setState(this.toggleHoverStatePainting);
   }
 
   handleMouseHoverAppleImacRepair() {
     this.setState(this.toggleHoverStateAppleImacRepair);
+  }
+
+  toggleHoverStateLandscaping(state) {
+    return {
+      isHoveringLandscaping: !state.isHoveringLandscaping,
+    };
   }
 
   toggleHoverStateGeneralCarpentry(state) {
@@ -86,9 +110,21 @@ class Homepage extends Component {
     };
   }
 
-  toggleHoverStateLandscaping(state) {
+  toggleHoverStateRoofRepair(state) {
     return {
-      isHoveringLandscaping: !state.isHoveringLandscaping,
+      isHoveringRoofRepair: !state.isHoveringRoofRepair,
+    };
+  }
+
+  toggleHoverStateDoorRepair(state) {
+    return {
+      isHoveringDoorRepair: !state.isHoveringDoorRepair,
+    };
+  }
+
+  toggleHoverStatePainting(state) {
+    return {
+      isHoveringPainting: !state.isHoveringPainting,
     };
   }
 
@@ -109,7 +145,7 @@ class Homepage extends Component {
               Put Your Feet Up And Let Us Do The Work!
             </h1>
             <h3 className="servicesDescription">
-              Take a look at the services we offer but do not hesitate to inquire about anything else, we a a full service company we just don't have room to put it all here!
+              Take a look at the services we offer but do not hesitate to inquire about anything else, we are a full service company we just don't have room to put it all here!
             </h3>
             <ul className="servicesList">
               <li className="servicesItem">
@@ -121,7 +157,7 @@ class Homepage extends Component {
                 </div>
                 {this.state.isHoveringLandscaping &&
                   <div className="landscapingShowMore">
-                    We can work on any kind of wood or structural repair in your home, including your exterior porches and railings.
+                    Grass mowing, edging, and blowing.  Just need your grass cut once?  Just need some leaves blown and gotten up?  No problem, we can do that!  We work on a call basis, or we can offer a discount for weekly service.  We plant trees, dig up decorative trees, trim bushes, pretty much anything you need we can do!
                   </div>
                 }
               </li>
@@ -147,18 +183,48 @@ class Homepage extends Component {
                 </div>
                   {this.state.isHoveringPlumbing &&
                   <div className="plumbingShowMore">
-                    We can work on any kind of wood or structural repair in your home, including your exterior porches and railings.
+                    Got a dripping faucet?  Toilet running constantly?  Want to replace your fixtures?  We can do that!
                   </div>
                 }
               </li>
               <li className="servicesItem">
-                Roof Repair
+                <div
+                  onMouseEnter={this.handleMouseHoverRoofRepair}
+                  onMouseLeave={this.handleMouseHoverRoofRepair}
+                  >
+                  Roof Repair
+                </div>
+                  {this.state.isHoveringRoofRepair &&
+                  <div className="roofRepairShowMore">
+                    Have a shingle or two missing?  Got a drip when it rains?  Let us take a look!
+                  </div>
+                }
               </li>
               <li className="servicesItem">
-                Door Repair/Replacement
+                <div
+                  onMouseEnter={this.handleMouseHoverDoorRepair}
+                  onMouseLeave={this.handleMouseHoverDoorRepair}
+                  >
+                  Door Repair
+                </div>
+                  {this.state.isHoveringDoorRepair &&
+                  <div className="doorRepairShowMore">
+                    We can replace interior and exterior doors, change locks, change door knobs, or any other repairs they may need!
+                  </div>
+                }
               </li>
               <li className="servicesItem">
-                Painting and Touchup
+                <div
+                  onMouseEnter={this.handleMouseHoverPainting}
+                  onMouseLeave={this.handleMouseHoverPainting}
+                  >
+                  Painting Touchup
+                </div>
+                  {this.state.isHoveringPainting &&
+                  <div className="paintingShowMore">
+                    We can handle interior and exterior touchup and refreshing.
+                  </div>
+                }
               </li>
               <li className="servicesItem">
                 Deck Maintenance
@@ -176,7 +242,7 @@ class Homepage extends Component {
                 Picture Hanging
               </li>
               <li className="servicesItem">
-                Air Filter Replacement
+                Filter Replacement
               </li>
               <li className="servicesItem">
                 Smoke Detectors

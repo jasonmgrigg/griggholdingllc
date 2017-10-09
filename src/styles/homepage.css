@@ -8,6 +8,7 @@
     background-size: 60%;
     background-attachment:fixed;
 
+
   }
 
   ul {
@@ -67,9 +68,19 @@
     margin-top: -6.5vw;
   }
 
+  .landscapingShowMore {
+    margin-left: 18vw;
+    margin-top: 7vw;
+    width: 30vw;
+    background-color: gray;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+
   .generalCarpentryShowMore {
     margin-left: 18vw;
-    margin-top: 4vw;
+    margin-top: 5vw;
     width: 30vw;
     background-color: gray;
     color: white;
@@ -79,7 +90,7 @@
 
   .plumbingShowMore {
     margin-left: 18vw;
-    margin-top: 5vw;
+    margin-top: 3vw;
     width: 30vw;
     background-color: gray;
     color: white;
@@ -87,10 +98,40 @@
     padding: 1vw;
   }
 
-  .landscapingShowMore {
-    margin-left: 18vw;
-    margin-top: 5vw;
+  .roofRepairShowMore {
     width: 30vw;
+    margin-left: 18vw;
+    margin-top: 1vw;
+    background-color: gray;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+
+  .doorRepairShowMore {
+    width: 30vw;
+    margin-left: 18vw;
+    margin-top: -1vw;
+    background-color: gray;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+
+  .paintingShowMore {
+    width: 30vw;
+    margin-left: 18vw;
+    margin-top: -3vw;
+    background-color: gray;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+
+  .deckShowMore {
+    width: 30vw;
+    margin-left: 18vw;
+    margin-top: -3vw;
     background-color: gray;
     color: white;
     border-radius: 1vw;
@@ -109,9 +150,9 @@
 
   .techServicesContainer {
     margin-left: 81vw;
-    margin-top: -48.5vw;
+    margin-top: -48.8vw;
     background-color: gray;
-    margin-bottom: 25vw;
+    margin-bottom: 24vw;
   }
 
   .techServicesTitle {
