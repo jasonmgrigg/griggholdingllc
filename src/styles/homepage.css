@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%;
+    background-attachment:fixed;
 
   }
 
@@ -44,6 +45,7 @@
 
   .servicesListContainer {
     text-decoration: none;
+    height: 44vw;
   }
 
   .servicesItem {
@@ -53,11 +55,63 @@
     font-weight: bold;
     text-shadow: 1px 1px black;
     text-decoration: none;
+    width: 13vw;
+  }
+
+  .servicesItem:hover {
+    color: gray;
   }
 
   .servicesList {
     text-decoration: none;
     margin-top: -6.5vw;
+  }
+
+  .generalCarpentryShowMore {
+    margin-left: 18vw;
+    margin-top: 4vw;
+    width: 30vw;
+    background-color: gray;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+
+  .plumbingShowMore {
+    margin-left: 18vw;
+    margin-top: 5vw;
+    width: 30vw;
+    background-color: gray;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+
+  .landscapingShowMore {
+    margin-left: 18vw;
+    margin-top: 5vw;
+    width: 30vw;
+    background-color: gray;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+
+  .appleImacRepairShowMore {
+    width: 30vw;
+    margin-left: -35vw;
+    margin-top: 5vw;
+    background-color: gray;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+
+  .techServicesContainer {
+    margin-left: 81vw;
+    margin-top: -48.5vw;
+    background-color: gray;
+    margin-bottom: 25vw;
   }
 
   .techServicesTitle {
@@ -66,14 +120,10 @@
     color: white;
     font-weight: bold;
     text-shadow: 1px 1px black;
-    margin-left: 81vw;
-    margin-top: -35.5vw;
-    margin-bottom: 32vw;
   }
 
   .techServicesList {
     text-decoration: none;
-    margin-left: 80vw;
-    margin-top: -31.5vw;
-    margin-bottom: 19vw;
+    margin-left: -1vw;
+    width: 13vw
   }
