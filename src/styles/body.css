@@ -1,5 +1,40 @@
 
   .bodyContainer {
     background-color: gray;
-    height: 35vw;
+    height: 30vw;
+    text-align: center;
   }
+
+.bodyTitle {
+  font-family: 'Fresca', sans-serif;
+  font-size: 3vw;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+  width: 50vw;
+  text-align: center;
+}
+.bodyText {
+  font-family: 'Fresca', sans-serif;
+  font-size: 1.5vw;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+  margin-left: 4vw;
+  width: 90vw;
+  text-align: center;
+}
+
+a {
+  font-family: 'Fresca', sans-serif;
+  font-size: 1.5vw;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+  color: gray;
+}

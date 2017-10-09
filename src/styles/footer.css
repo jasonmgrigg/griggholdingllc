@@ -1,7 +1,7 @@
   .fullFooter {
     background-color: #121E2C;
     width: 100vw;
-    height: 7vw;
+    height: 9vw;
   }
 
   .developer {
@@ -10,26 +10,30 @@
 
   .developerName {
     white-space: nowrap;
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Fresca', sans-serif;
     font-size: .8vw;
-    color: #C81010;
+    color: #gray;
     margin-left: 88vw;
   }
 
   .developerCompany {
     margin-top: -.7vw;
     white-space: nowrap;
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Fresca', sans-serif;
     font-size: .8vw;
-    color: #C81010;
+    color: #gray;
     margin-left: 88vw;
   }
 
   .developerPhone {
-    margin-top: -.6vw;
+    margin-top: -.7vw;
     white-space: nowrap;
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Fresca', sans-serif;
     font-size: .8vw;
-    color: #C81010;
+    color: #gray;
     margin-left: 88vw;
   }
+
+a {
+  text-decoration: none;
+}

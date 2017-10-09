@@ -1,0 +1,79 @@
+
+  .servicesContainer {
+    background-color: gray;
+    height: 100%;
+    background-image: url(../pictures/feetup.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .servicesTitle {
+    font-family: 'Fresca', sans-serif;
+    font-size: 2vw;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    margin-left: 41vw;
+  }
+
+  .servicesDescription {
+    font-family: 'Fresca', sans-serif;
+    font-size: 1vw;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    margin-left: 42vw;
+    margin-top: -.5vw;
+    width: 33vw;
+  }
+
+  .homeServicesTitle {
+    font-family: 'Fresca', sans-serif;
+    font-size: 2.5vw;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    margin-left: 1vw;
+  }
+
+  .servicesListContainer {
+    text-decoration: none;
+  }
+
+  .servicesItem {
+    font-family: 'Fresca', sans-serif;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+  }
+
+  .servicesList {
+    text-decoration: none;
+    margin-top: -6.5vw;
+  }
+
+  .techServicesTitle {
+    font-family: 'Fresca', sans-serif;
+    font-size: 2.5vw;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    margin-left: 81vw;
+    margin-top: -35.5vw;
+    margin-bottom: 32vw;
+  }
+
+  .techServicesList {
+    text-decoration: none;
+    margin-left: 80vw;
+    margin-top: -31.5vw;
+    margin-bottom: 19vw;
+  }

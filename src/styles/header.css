@@ -3,39 +3,40 @@
     background-color: gray;
   }
 
+  a:hover {
+    text-decoration: none;
+  }
+
   .fullHeader {
     background-color: #121E2C;
     width: 100vw;
-    height: 7.5vw;
+    height: 6vw;
     display: flex;
     flex-direction: row;
   }
 
   .headerTitle {
     white-space: nowrap;
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Fresca', sans-serif;
     font-size: 3vw;
-    color: #C81010;
-    margin-top: 1.5vw;
+    color: gray;
+    margin-top: 1vw;
     margin-left: 1vw;
-  }
-
-  a:hover {
     text-decoration: none;
-    color: #C81010;
   }
 
   .headerSubtitle {
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Fresca', sans-serif;
     font-size: 1.6vw;
     color: white;
     font-weight: bold;
     text-shadow: 1px 1px black;
-    margin-left: 2vw;
+    margin-left: 3vw;
+    text-decoration: none;
   }
 
   .headerSubtitle:hover {
-    color: black;
+    color: gray;
   }
 
   .headerInfo {
