@@ -131,7 +131,27 @@
   .deckShowMore {
     width: 30vw;
     margin-left: 18vw;
-    margin-top: -3vw;
+    margin-top: -5vw;
+    background-color: gray;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+
+  .pressureWashingShowMore {
+    width: 30vw;
+    margin-left: 18vw;
+    margin-top: -7vw;
+    background-color: gray;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+
+  .gutterCleaningShowMore {
+    width: 30vw;
+    margin-left: 18vw;
+    margin-top: -9vw;
     background-color: gray;
     color: white;
     border-radius: 1vw;

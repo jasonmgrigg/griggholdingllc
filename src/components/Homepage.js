@@ -15,6 +15,9 @@ class Homepage extends Component {
     this.handleMouseHoverRoofRepair = this.handleMouseHoverRoofRepair.bind(this);
     this.handleMouseHoverDoorRepair = this.handleMouseHoverDoorRepair.bind(this);
     this.handleMouseHoverPainting = this.handleMouseHoverPainting.bind(this);
+    this.handleMouseHoverDeck = this.handleMouseHoverDeck.bind(this);
+    this.handleMouseHoverPressureWashing = this.handleMouseHoverPressureWashing.bind(this);
+    this.handleMouseHoverGutterCleaning = this.handleMouseHoverGutterCleaning.bind(this);
     this.handleMouseHoverAppleImacRepair = this.handleMouseHoverAppleImacRepair.bind(this);
 
     this.state = {
@@ -24,6 +27,9 @@ class Homepage extends Component {
       isHoveringRoofRepair: false,
       isHoveringDoorRepair: false,
       isHoveringPainting: false,
+      isHoveringDeck: false,
+      isHoveringPressureWashing: false,
+      isHoveringGutterCleaning: false,
       isHoveringAppleImacRepair: false,
       contributors: [
         {
@@ -88,6 +94,18 @@ class Homepage extends Component {
     this.setState(this.toggleHoverStatePainting);
   }
 
+  handleMouseHoverDeck() {
+    this.setState(this.toggleHoverStateDeck);
+  }
+
+  handleMouseHoverPressureWashing() {
+    this.setState(this.toggleHoverStatePressureWashing);
+  }
+
+  handleMouseHoverGutterCleaning() {
+    this.setState(this.toggleHoverStateGutterCleaning);
+  }
+
   handleMouseHoverAppleImacRepair() {
     this.setState(this.toggleHoverStateAppleImacRepair);
   }
@@ -125,6 +143,24 @@ class Homepage extends Component {
   toggleHoverStatePainting(state) {
     return {
       isHoveringPainting: !state.isHoveringPainting,
+    };
+  }
+
+  toggleHoverStateDeck(state) {
+    return {
+      isHoveringDeck: !state.isHoveringDeck,
+    };
+  }
+
+  toggleHoverStatePressureWashing(state) {
+    return {
+      isHoveringPressureWashing: !state.isHoveringPressureWashing,
+    };
+  }
+
+  toggleHoverStateGutterCleaning(state) {
+    return {
+      isHoveringGutterCleaning: !state.isHoveringGutterCleaning,
     };
   }
 
@@ -227,13 +263,43 @@ class Homepage extends Component {
                 }
               </li>
               <li className="servicesItem">
-                Deck Maintenance
+                <div
+                  onMouseEnter={this.handleMouseHoverDeck}
+                  onMouseLeave={this.handleMouseHoverDeck}
+                  >
+                  Deck Maintenance
+                </div>
+                  {this.state.isHoveringDeck &&
+                  <div className="deckShowMore">
+                    Deck looking a little dirty?  We can pressure wash and stain/seal most types of woods.  We can also replace any damaged or missing boards and railings.
+                  </div>
+                }
               </li>
               <li className="servicesItem">
-                Pressure Washing
+                <div
+                  onMouseEnter={this.handleMouseHoverPressureWashing}
+                  onMouseLeave={this.handleMouseHoverPressureWashing}
+                  >
+                  Pressure Washing
+                </div>
+                  {this.state.isHoveringPressureWashing &&
+                  <div className="pressureWashingShowMore">
+                    If it will stand still, we can pressure wash it!  Driveways, house siding, decks, literally anything!
+                  </div>
+                }
               </li>
               <li className="servicesItem">
-                Gutter Cleaning
+                <div
+                  onMouseEnter={this.handleMouseHoverGutterCleaning}
+                  onMouseLeave={this.handleMouseHoverGutterCleaning}
+                  >
+                  Gutter Cleaning
+                </div>
+                  {this.state.isHoveringGutterCleaning &&
+                  <div className="gutterCleaningShowMore">
+                    Let us clean your gutters of leaves and debris for better water drainage and roof leaks.
+                  </div>
+                }
               </li>
               <li className="servicesItem">
                 Window Cleaning
