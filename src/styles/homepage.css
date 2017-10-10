@@ -218,6 +218,16 @@
     padding: 1vw;
   }
 
+  .smartPhoneRepairShowMore {
+    width: 30vw;
+    margin-left: -35vw;
+    margin-top: 3vw;
+    background-color: gray;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+
   .techServicesContainer {
     margin-left: 81vw;
     margin-top: -48vw;

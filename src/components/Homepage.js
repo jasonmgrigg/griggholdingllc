@@ -24,6 +24,7 @@ class Homepage extends Component {
     this.handleMouseHoverDetectorBatteries = this.handleMouseHoverDetectorBatteries.bind(this);
     this.handleMouseHoverCarWashing = this.handleMouseHoverCarWashing.bind(this);
     this.handleMouseHoverAppleImacRepair = this.handleMouseHoverAppleImacRepair.bind(this);
+    this.handleMouseHoverSmartPhoneRepair = this.handleMouseHoverSmartPhoneRepair.bind(this);
 
     this.state = {
       isHoveringLandscaping: false,
@@ -41,6 +42,7 @@ class Homepage extends Component {
       isHoveringDetectorBatteries: false,
       isHoveringCarWashing: false,
       isHoveringAppleImacRepair: false,
+      isHoveringSmartPhoneRepair: false,
       contributors: [
         {
           name: 'Brittany Arsi',
@@ -140,6 +142,10 @@ class Homepage extends Component {
     this.setState(this.toggleHoverStateAppleImacRepair);
   }
 
+  handleMouseHoverSmartPhoneRepair() {
+    this.setState(this.toggleHoverStateSmartPhoneRepair);
+  }
+
   toggleHoverStateLandscaping(state) {
     return {
       isHoveringLandscaping: !state.isHoveringLandscaping,
@@ -227,6 +233,12 @@ class Homepage extends Component {
   toggleHoverStateAppleImacRepair(state) {
     return {
       isHoveringAppleImacRepair: !state.isHoveringAppleImacRepair,
+    };
+  }
+
+  toggleHoverStateSmartPhoneRepair(state) {
+    return {
+      isHoveringSmartPhoneRepair: !state.isHoveringSmartPhoneRepair,
     };
   }
 
@@ -440,16 +452,26 @@ class Homepage extends Component {
                 onMouseEnter={this.handleMouseHoverAppleImacRepair}
                 onMouseLeave={this.handleMouseHoverAppleImacRepair}
                 >
-                Apple iMac Repair
+                Computer Repair
               </div>
                 {this.state.isHoveringAppleImacRepair &&
                 <div className="appleImacRepairShowMore">
-                  We can work on any kind of wood or structural repair in your home, including your exterior porches and railings.
+                  We have years of experience repairing Apple Mac's as well as Windows Computers, we are here to help with just about anything from basic setup to virus removal.
                 </div>
               }
             </li>
             <li className="servicesItem">
-              Smartphone Repair
+              <div
+                onMouseEnter={this.handleMouseHoverSmartPhoneRepair}
+                onMouseLeave={this.handleMouseHoverSmartPhoneRepair}
+                >
+                Smart Phone Repair
+              </div>
+                {this.state.isHoveringSmartPhoneRepair &&
+                <div className="smartPhoneRepairShowMore">
+                  Having trouble with your smart phone?  We can help!
+                </div>
+              }
             </li>
             <li className="servicesItem">
               Home Networking
