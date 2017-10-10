@@ -18,6 +18,11 @@ class Homepage extends Component {
     this.handleMouseHoverDeck = this.handleMouseHoverDeck.bind(this);
     this.handleMouseHoverPressureWashing = this.handleMouseHoverPressureWashing.bind(this);
     this.handleMouseHoverGutterCleaning = this.handleMouseHoverGutterCleaning.bind(this);
+    this.handleMouseHoverWindowCleaning = this.handleMouseHoverWindowCleaning.bind(this);
+    this.handleMouseHoverPictureHanging = this.handleMouseHoverPictureHanging.bind(this);
+    this.handleMouseHoverFilterReplacement = this.handleMouseHoverFilterReplacement.bind(this);
+    this.handleMouseHoverDetectorBatteries = this.handleMouseHoverDetectorBatteries.bind(this);
+    this.handleMouseHoverCarWashing = this.handleMouseHoverCarWashing.bind(this);
     this.handleMouseHoverAppleImacRepair = this.handleMouseHoverAppleImacRepair.bind(this);
 
     this.state = {
@@ -30,6 +35,11 @@ class Homepage extends Component {
       isHoveringDeck: false,
       isHoveringPressureWashing: false,
       isHoveringGutterCleaning: false,
+      isHoveringWindowCleaning: false,
+      isHoveringPictureHanging: false,
+      isHoveringFilterReplacement: false,
+      isHoveringDetectorBatteries: false,
+      isHoveringCarWashing: false,
       isHoveringAppleImacRepair: false,
       contributors: [
         {
@@ -106,6 +116,26 @@ class Homepage extends Component {
     this.setState(this.toggleHoverStateGutterCleaning);
   }
 
+  handleMouseHoverWindowCleaning() {
+    this.setState(this.toggleHoverStateWindowCleaning);
+  }
+
+  handleMouseHoverPictureHanging() {
+    this.setState(this.toggleHoverStatePictureHanging);
+  }
+
+  handleMouseHoverFilterReplacement() {
+    this.setState(this.toggleHoverStateFilterReplacement);
+  }
+
+  handleMouseHoverDetectorBatteries() {
+    this.setState(this.toggleHoverStateDetectorBatteries);
+  }
+
+  handleMouseHoverCarWashing() {
+    this.setState(this.toggleHoverStateCarWashing);
+  }
+
   handleMouseHoverAppleImacRepair() {
     this.setState(this.toggleHoverStateAppleImacRepair);
   }
@@ -161,6 +191,36 @@ class Homepage extends Component {
   toggleHoverStateGutterCleaning(state) {
     return {
       isHoveringGutterCleaning: !state.isHoveringGutterCleaning,
+    };
+  }
+
+  toggleHoverStateWindowCleaning(state) {
+    return {
+      isHoveringWindowCleaning: !state.isHoveringWindowCleaning,
+    };
+  }
+
+  toggleHoverStatePictureHanging(state) {
+    return {
+      isHoveringPictureHanging: !state.isHoveringPictureHanging,
+    };
+  }
+
+  toggleHoverStateFilterReplacement(state) {
+    return {
+      isHoveringFilterReplacement: !state.isHoveringFilterReplacement,
+    };
+  }
+
+  toggleHoverStateDetectorBatteries(state) {
+    return {
+      isHoveringDetectorBatteries: !state.isHoveringDetectorBatteries,
+    };
+  }
+
+  toggleHoverStateCarWashing(state) {
+    return {
+      isHoveringCarWashing: !state.isHoveringCarWashing,
     };
   }
 
@@ -302,22 +362,69 @@ class Homepage extends Component {
                 }
               </li>
               <li className="servicesItem">
-                Window Cleaning
+                <div
+                  onMouseEnter={this.handleMouseHoverWindowCleaning}
+                  onMouseLeave={this.handleMouseHoverWindowCleaning}
+                  >
+                  Window Cleaning
+                </div>
+                  {this.state.isHoveringWindowCleaning &&
+                  <div className="windowCleaningShowMore">
+                    Let us clean your windows inside and out to let the sunshine in!
+                  </div>
+                }
               </li>
               <li className="servicesItem">
-                Picture Hanging
+                <div
+                  onMouseEnter={this.handleMouseHoverPictureHanging}
+                  onMouseLeave={this.handleMouseHoverPictureHanging}
+                  >
+                  Picture Hanging
+                </div>
+                  {this.state.isHoveringPictureHanging &&
+                  <div className="pictureHangingShowMore">
+                    We can pictures of all sizes, secure and level!
+                  </div>
+                }
               </li>
               <li className="servicesItem">
-                Filter Replacement
+                <div
+                  onMouseEnter={this.handleMouseHoverFilterReplacement}
+                  onMouseLeave={this.handleMouseHoverFilterReplacement}
+                  >
+                  Filter Replacement
+                </div>
+                  {this.state.isHoveringFilterReplacement &&
+                  <div className="filterReplacementShowMore">
+                    Let us replace your air filters to keep your HVAC system flowing smoothly!
+                  </div>
+                }
               </li>
               <li className="servicesItem">
-                Smoke Detectors
+                <div
+                  onMouseEnter={this.handleMouseHoverDetectorBatteries}
+                  onMouseLeave={this.handleMouseHoverDetectorBatteries}
+                  >
+                  Detector Batteries
+                </div>
+                  {this.state.isHoveringDetectorBatteries &&
+                  <div className="detectorBatteriesShowMore">
+                    Stay off the ladder and let us silence that annoying beep by replacing your smoke and carbon monoxide detetector batteries!
+                  </div>
+                }
               </li>
               <li className="servicesItem">
-                Car Washing
-              </li>
-              <li className="servicesItem">
-                Screen Porch Repair
+                <div
+                  onMouseEnter={this.handleMouseHoverCarWashing}
+                  onMouseLeave={this.handleMouseHoverCarWashing}
+                  >
+                  Car Washing
+                </div>
+                  {this.state.isHoveringCarWashing &&
+                  <div className="carWashingShowMore">
+                    Need your car cleaned inside and out?  We can do that!  Just lend us your water hose and we'll bring everything else!
+                  </div>
+                }
               </li>
             </ul>
           </div>

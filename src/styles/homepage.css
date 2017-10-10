@@ -151,7 +151,57 @@
   .gutterCleaningShowMore {
     width: 30vw;
     margin-left: 18vw;
-    margin-top: -9vw;
+    margin-top: 2vw;
+    background-color: gray;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+
+  .windowCleaningShowMore {
+    width: 30vw;
+    margin-left: 18vw;
+    margin-top: 0vw;
+    background-color: gray;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+
+  .pictureHangingShowMore {
+    width: 30vw;
+    margin-left: 18vw;
+    margin-top: -2vw;
+    background-color: gray;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+
+  .filterReplacementShowMore {
+    width: 30vw;
+    margin-left: 18vw;
+    margin-top: -4vw;
+    background-color: gray;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+
+  .detectorBatteriesShowMore {
+    width: 30vw;
+    margin-left: 18vw;
+    margin-top: -6vw;
+    background-color: gray;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+
+  .carWashingShowMore {
+    width: 30vw;
+    margin-left: 18vw;
+    margin-top: -8vw;
     background-color: gray;
     color: white;
     border-radius: 1vw;
@@ -170,7 +220,7 @@
 
   .techServicesContainer {
     margin-left: 81vw;
-    margin-top: -48.8vw;
+    margin-top: -48vw;
     background-color: gray;
     margin-bottom: 24vw;
   }
