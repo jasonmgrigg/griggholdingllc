@@ -1,40 +1,41 @@
 
   .bodyContainer {
-    background-color: gray;
-    height: 30vw;
+    background-color: black;
+    height: 28vw;
+    background-image: url("../pictures/handtools.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  .titleContainer {
+    width: 50%;
+    margin-left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
   }
 
-.bodyTitle {
-  font-family: 'Fresca', sans-serif;
-  font-size: 3vw;
-  color: white;
-  font-weight: bold;
-  text-shadow: 1px 1px black;
-  width: 50vw;
-  text-align: center;
-}
-.bodyText {
-  font-family: 'Fresca', sans-serif;
-  font-size: 1.5vw;
-  color: white;
-  font-weight: bold;
-  text-shadow: 1px 1px black;
-  margin-left: 4vw;
-  width: 90vw;
-  text-align: center;
-}
+  .titleText {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 2.8vw;
+    color: #D6582E;
+  }
 
-a {
-  font-family: 'Fresca', sans-serif;
-  font-size: 1.5vw;
-  color: white;
-  font-weight: bold;
-  text-shadow: 1px 1px black;
-  text-decoration: underline;
-}
+  .titleDescription {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1.5vw;
+    color: gray;
+  }
 
-a:hover {
-  text-decoration: none;
-  color: gray;
-}
+  .phoneNumber {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1.5vw;
+    color: gray;
+  }

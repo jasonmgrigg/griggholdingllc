@@ -1,0 +1,98 @@
+
+.aboutUsContainer {
+  height: 38vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  padding-top: 2vw;
+}
+
+.aboutUsTitle {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 2.8vw;
+  color: #D6582E;
+}
+
+h1 {
+ overflow: hidden;
+ text-align: center;
+}
+h1:before,
+h1:after {
+ background-color: #D6582E;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+h1:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+h1:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2vw;
+}
+
+.itemTitle {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 1.8vw;
+}
+
+.itemText {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 1vw;
+}
+
+.homeRepairServices {
+  padding-top: 3vw;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../pictures/tapemeasure.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25vw;
+  width: 100%;
+  color: white;
+}
+
+.computerItServices {
+  padding-top: 3vw;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../pictures/computers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25vw;
+  width: 100%;
+  color: white;
+}
+
+.realtorServices {
+  padding-top: 3vw;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../pictures/bluehouse.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25vw;
+  width: 100%;
+  color: white;
+}
+
+.buttonContainer {
+  padding-top: 2vw;
+}
+
+.findOutMore {
+  font-family: 'Hind Siliguri', sans-serif;
+  background-color: #D6582E;
+  color: white;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  border-radius: 1vw;
+}
