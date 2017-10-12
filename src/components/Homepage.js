@@ -3,7 +3,9 @@ import '../styles/homepage.css';
 import Header from './Header.js'
 import Body from './Body.js'
 import AboutUs from './AboutUs.js'
+import Contact from './Contact.js'
 import Footer from './Footer.js';
+
 
 
 class Homepage extends Component {
@@ -19,6 +21,7 @@ class Homepage extends Component {
       <Header />
       <Body />
       <AboutUs />
+      <Contact />
       <Footer />
       </div>
     );

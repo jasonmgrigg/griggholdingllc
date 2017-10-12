@@ -1,40 +1,39 @@
+a {
+  text-decoration: none;
+}
   .fullFooter {
     background-color: #121E2C;
-    width: 100vw;
-    height: 10vw;
-    position: absolute;
+    width: 100%;
+    text-align: right;
+    padding-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .developer {
-    padding-top: 1vw;
+    padding-top: .8vw;
   }
 
   .developerName {
     white-space: nowrap;
-    font-family: 'Fresca', sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
     font-size: .8vw;
-    color: #gray;
-    margin-left: 88vw;
+    color: #D6582E;
   }
 
   .developerCompany {
     margin-top: -.7vw;
     white-space: nowrap;
-    font-family: 'Fresca', sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
     font-size: .8vw;
-    color: #gray;
-    margin-left: 88vw;
+    color: #D6582E;
   }
 
   .developerPhone {
     margin-top: -.7vw;
     white-space: nowrap;
-    font-family: 'Fresca', sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
     font-size: .8vw;
-    color: #gray;
-    margin-left: 88vw;
+    color: #D6582E;
   }
-
-a {
-  text-decoration: none;
-}

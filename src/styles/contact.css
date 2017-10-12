@@ -1,46 +1,108 @@
+.contactContainer {
+  height: 38vw;
+  background-color: #F4F4F4;
+}
 
-  .contactContainer {
-    height: 33vw;
-  }
+.contactTitle {
+  margin-left:10vw;
+  margin-right:10vw;
+  padding-top: 4vw;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 2.8vw;
+  color: #D6582E;
+}
 
-  .address1 {
-    white-space: nowrap;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 1vw;
-    color: #C81010;
-    margin-top: 1.5vw;
-    margin-left: 1vw;
-  }
+h1 {
+ overflow: hidden;
+ text-align: center;
+}
+h1:before,
+h1:after {
+ background-color: #D6582E;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 40vw;
+}
+h1:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+h1:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
 
-  .address2 {
-    white-space: nowrap;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 1vw;
-    color: #C81010;
-    margin-left: 1vw;
-  }
+.contactTextTitle {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 1.5vw;
+  color: black;
+  text-align: center;
+  padding-top: 2vw;
+}
 
-  .address3 {
-    white-space: nowrap;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 1vw;
-    color: #C81010;
-    margin-bottom: 1.5vw;
-    margin-left: 1vw;
-  }
+.contactTextContainer {
+  padding-top: 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-  .phone {
-    white-space: nowrap;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 1vw;
-    color: #C81010;
-    margin-left: 1vw;
-  }
+.contactInfoContainer {
+  width: 30vw;
+  border-style: solid;
+  border-width: thin;
+}
 
-  .emailContainer {
-    white-space: nowrap;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 1vw;
-    color: #C81010;
-    margin-left: 1vw;
-  }
+.contactHoursContainer {
+  width: 30vw;
+  border-style: solid;
+  border-width: thin;
+}
+
+.contactText {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 1.5vw;
+  color: black;
+  text-align: center;
+  padding-top: 2vw;
+}
+
+.contactCompany {
+  padding-top: 1vw;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 1.5vw;
+  text-decoration-line: underline;
+  color: black;
+  text-align: center;
+}
+
+.contactPhone {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 1.5vw;
+  color: black;
+  text-align: center;
+}
+
+.contactEmail {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 1.5vw;
+  color: black;
+  text-align: center;
+}
+
+.contactHoursTitle {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 1.5vw;
+  color: black;
+  text-align: center;
+}
+
+.contactHours {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 1.5vw;
+  color: black;
+  text-align: center;
+}
