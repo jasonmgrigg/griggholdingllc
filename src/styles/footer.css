@@ -17,23 +17,23 @@ a {
 
   .developerName {
     white-space: nowrap;
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Cinzel', serif;
     font-size: .8vw;
-    color: #D6582E;
+    color: #886B2A;
   }
 
   .developerCompany {
     margin-top: -.7vw;
     white-space: nowrap;
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Cinzel', serif;
     font-size: .8vw;
-    color: #D6582E;
+    color: #886B2A;
   }
 
   .developerPhone {
     margin-top: -.7vw;
     white-space: nowrap;
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Cinzel', serif;
     font-size: .8vw;
-    color: #D6582E;
+    color: #886B2A;
   }

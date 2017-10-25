@@ -10,7 +10,6 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
   }
 
   .titleContainer {
@@ -23,19 +22,19 @@
   }
 
   .titleText {
-    font-family: 'Hind Siliguri', sans-serif;
-    font-size: 2.8vw;
-    color: #D6582E;
+    font-family: 'Cinzel', serif;
+    font-size: 2.6vw;
+    color: #886B2A;
   }
 
   .titleDescription {
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Cinzel', serif;
     font-size: 1.5vw;
     color: gray;
   }
 
   .phoneNumber {
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Cinzel', serif;
     font-size: 1.5vw;
     color: gray;
   }

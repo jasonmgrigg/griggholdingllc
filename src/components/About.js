@@ -35,7 +35,7 @@ class About extends Component {
           <div className="aboutText">
             After selling our business I made the decision to do something in life that I enjoy.  Fixing things around the house,
             making home improvements, repairing/upgrading computers, and the repair of pretty much any other electronic device is
-            something that I enjoy, and would really enjoy building a business providing these services.
+            something that I enjoy, and I really enjoy building a business providing these services.
           </div>
         </div>
       <Footer />

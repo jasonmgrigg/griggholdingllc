@@ -25,6 +25,9 @@ class Body extends Component {
             (919) 932-0835
           </div>
         </div>
+        <div className="titleComputerContainer">
+          
+        </div>
       </div>
     )
   }

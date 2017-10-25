@@ -11,7 +11,7 @@ class Header extends Component {
   render() {
     return (
       <div className="fullHeader">
-        <a className="headerTitle">GRIGG HOLDINGS, LLC</a>
+        <div className="headerTitle">GRIGG HOLDINGS, LLC</div>
         </div>
     );
   }

@@ -19,10 +19,11 @@ class HomeRepairServices extends Component {
         <Header />
         <div className="aboutUsContainer">
           <h1 className="aboutUsTitle">HOME MAINTENANCE AND REPAIR SERVICES</h1>
+          <h2 className="laborTitle">Rate: $50/Hour Billed in 1/2 Hour Increments</h2>
           <div className="itemContainer">
             <div className="oneServices">
               <h2 className="itemTitle">Home Repair Services</h2>
-              <h3 className="itemText">We are here to repair just about anything in your including minor plumbing repairs, electrical repairs, and fixture replacement.  We replace smoke detector batteries and air filters when needed.  There is no job too small, we can do anything needed.</h3>
+              <h3 className="itemText">We are here to repair just about anything in your including minor plumbing repairs, electrical repairs, and fixture replacement.  We replace smoke detector batteries and air filters when needed.  We hang shelving in any room of your house for additional storage spae.  There is no job too small, we can do anything needed.</h3>
             </div>
             <div className="twoServices">
               <h2 className="itemTitle">General Assistance</h2>
@@ -38,11 +39,11 @@ class HomeRepairServices extends Component {
             </div>
             <div className="fiveServices">
               <h2 className="itemTitle">Dryer Vent Cleaning</h2>
-              <h3 className="itemText">Your dryer vent is a very neglected item in your home that needs regular maintenance.  Let us clean it of lint and debris to keep your dryer running at peak efficience and to avoid the risk of fire.</h3>
+              <h3 className="itemText">Your dryer vent is a very neglected item in your home that needs regular maintenance.  Let us clean it of lint and debris to keep your dryer running at peak efficiency and to avoid the risk of fire.</h3>
             </div>
             <div className="sixServices">
-              <h2 className="itemTitle">Empty Space</h2>
-              <h3 className="itemText">This is an empty space for now.</h3>
+              <h2 className="itemTitle">Garage</h2>
+              <h3 className="itemText">We are experts at hanging peg board for garage organization.  Since most of the garages in Briar Chapel are unfinished, we can paint, hang peg board, shelving, or any other type of improvements.</h3>
             </div>
           </div>
         </div>

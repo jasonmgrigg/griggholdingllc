@@ -7,9 +7,9 @@
   margin-left:10vw;
   margin-right:10vw;
   padding-top: 4vw;
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 2.8vw;
-  color: #D6582E;
+  color: #886B2A;
 }
 
 h1 {
@@ -18,7 +18,7 @@ h1 {
 }
 h1:before,
 h1:after {
- background-color: #D6582E;
+ background-color: #886B2A;
  content: "";
  display: inline-block;
  height: 1px;
@@ -36,7 +36,7 @@ h1:after {
 }
 
 .contactTextTitle {
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 1.5vw;
   color: black;
   text-align: center;
@@ -63,7 +63,7 @@ h1:after {
 }
 
 .contactText {
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 1.5vw;
   color: black;
   text-align: center;
@@ -72,7 +72,7 @@ h1:after {
 
 .contactCompany {
   padding-top: 1vw;
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 1.5vw;
   text-decoration-line: underline;
   color: black;
@@ -80,28 +80,28 @@ h1:after {
 }
 
 .contactPhone {
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 1.5vw;
   color: black;
   text-align: center;
 }
 
 .contactEmail {
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 1.5vw;
   color: black;
   text-align: center;
 }
 
 .contactHoursTitle {
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 1.5vw;
   color: black;
   text-align: center;
 }
 
 .contactHours {
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 1.5vw;
   color: black;
   text-align: center;
